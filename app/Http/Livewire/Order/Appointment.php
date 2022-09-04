@@ -96,4 +96,13 @@ class Appointment extends Component
             return session()->flash('error', $e->getMessage());
         }
     }
+
+    public function hydrate()
+    {
+        if (is_a($this->timeSlot, 'Illuminate\Database\Eloquent\Collection')) {
+            $this->timeSlot->loadCount(['orders' => function($query) {
+                $query->where('day', $this->day);
+            }]);
+        }
+    }
 }

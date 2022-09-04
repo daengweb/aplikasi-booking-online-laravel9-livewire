@@ -44,38 +44,7 @@
         </div>
     </section>
     <section id="counts" class="counts">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="count-box">
-                        <i class="fas fa-user-md"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>Pasien (Hari Ini)</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-                    <div class="count-box">
-                        <i class="far fa-hospital"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>Antrian (Hari Ini)</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                    <div class="count-box">
-                        <i class="fas fa-flask"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>Tertangani (Hari Ini)</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                    <div class="count-box">
-                        <i class="fas fa-award"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>Total Pasien</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @livewire('order.summary')
     </section>
     <section id="appointment" class="appointment section-bg">
         @livewire('order.appointment')
