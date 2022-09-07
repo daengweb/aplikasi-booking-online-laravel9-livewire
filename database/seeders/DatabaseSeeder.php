@@ -21,5 +21,6 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         $this->call(DailySlotSeeder::class);
+        $this->call(UsersTableSeeder::class);
     }
 }
