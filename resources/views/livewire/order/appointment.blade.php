@@ -76,7 +76,7 @@
                 </select>
                 @error('note') <p class="text-danger">{{ $message }}</p> @enderror
             </div>
-            <div class="form-group" id="note_form" style="display: none">
+            <div wire:ignore.self class="form-group" id="note_form" style="display: none">
                 <label for="">Catatan</label>
                 <textarea wire:model="note_additional" class="form-control" id="note_additional" cols="5" rows="5"></textarea>
                 @error('note_additional') <p class="text-danger">{{ $message }}</p> @enderror
