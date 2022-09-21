@@ -37,7 +37,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="modalDataPasien" tabindex="-1" role="dialog" aria-labelledby="modalPasien" aria-hidden="true">
+    <div wire:ignore.self class="modal fade" id="modalDataPasien" tabindex="-1" role="dialog" aria-labelledby="modalPasien" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
